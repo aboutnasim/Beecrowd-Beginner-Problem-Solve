@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,area=0,limit=0,ans=0;
+
+    while(1)
+    {
+        scanf("%d",&a);
+        if(a==0) break;
+        scanf("%d %d",&b, &c);
+
+        area = a*b;
+        limit = (area*100)/c;
+
+        for(int j=1; j*j<=limit; j++)
+        {
+            ans = j;
+        }
+        printf("%d",ans);
+
+
+    }
+    ans=0;
+    area=0;
+    limit=0;
+}
