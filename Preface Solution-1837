@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main()
+{
+    int x,y,q,r,e,f;
+
+    scanf("%d %d",&x, &y);
+
+    if(x<0)
+    {
+        e = y;
+
+        if(y<0) e = y *(-1);
+        for(r=0; r<e; r++)
+        {
+            f = x-r;
+
+            if(f%y == 0) break;
+        }
+        q = f/y;
+    }
+
+    else
+    {
+        q = x/y;
+        r = x%y;
+    }
+    printf("%d %d\n",q,r);
+}
