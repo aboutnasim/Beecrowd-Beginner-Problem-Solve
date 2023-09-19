@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int n, i;
+    int count=0, sum=0;
+
+    while(1)
+    {
+        scanf("%d",&n);
+
+        if(n==0)break;
+
+        for(i=n; ; i++)
+        {
+            if(count==5) break;
+
+            if(i % 2 == 0)
+            {
+                count++;
+                sum = sum + i;
+            }
+        }
+        printf("%d\n",sum);
+        count=0;
+        sum=0;
+    }
+}
