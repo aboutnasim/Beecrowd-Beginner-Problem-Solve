@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main()
+{
+    int i, p, n, m=1000000234;
+    scanf("%d",&n);
+    int a[n];
+
+    for(int i=0; i<n; i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+
+    for(int i=1; i<n; i++)
+    {
+        if(a[i] < m)
+        {
+            m = a[i];
+            p = i;
+        }
+    }
+
+    printf("Menor valor: %d\n",m);
+    printf("Posicao: %d\n",p);
+}
