@@ -1,0 +1,50 @@
+#include<stdio.h>
+
+int main()
+{
+    int n, i, x, sum1=0, sum2=0, sum3=0;
+    char h, b='%';
+    int sum=0;
+    double poc, por, pos;
+
+    scanf("%d",&n);
+
+    for(i=1; i<=n; i++)
+    {
+        scanf("%d %c",&x,&h);
+
+
+        if('C' == h)
+        {
+            sum1 = sum1 + x;
+        }
+
+
+        if('R' == h)
+        {
+            sum2 = sum2 + x;
+        }
+
+        if('S' == h)
+        {
+            sum3 = sum3 + x;
+        }
+
+    }
+
+    sum = sum1 + sum2 + sum3;
+    poc = (sum1 * 1.00 * 100)/sum;
+    por = (sum2 * 1.00 * 100)/sum;
+    pos = (sum3 * 1.00 * 100)/sum;
+
+    printf("Total: %d cobaias\n",sum);
+    printf("Total de coelhos: %d\n",sum1);
+    printf("Total de ratos: %d\n",sum2);
+    printf("Total de sapos: %d\n",sum3);
+
+    printf("Percentual de coelhos: %0.2lf %c\n",poc,b);
+    printf("Percentual de ratos: %0.2lf %c\n",por,b);
+    printf("Percentual de sapos: %0.2lf %c\n",pos,b);
+
+
+}
