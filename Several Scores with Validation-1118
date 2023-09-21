@@ -1,0 +1,55 @@
+#include<stdio.h>
+
+int main()
+{
+    double n, sum=0, count=0, media,k;
+    while(1)
+    {
+
+        scanf("%lf",&n);
+
+        if(n>=0  && n<=10)
+        {
+            count++;
+            sum = sum + n;
+
+            if(count == 2)
+            {
+                media = sum/2;
+                printf("media = %0.2lf\n",media);
+                printf("novo calculo (1-sim 2-nao)\n");
+
+                while(1)
+                {
+                    scanf("%lf",&k);
+                    if(k==1)
+                    {
+                        count =0;
+                        sum = 0;
+                        break;
+                    }
+
+
+
+                    else if(k==2) return 0;
+
+                    else printf("novo calculo (1-sim 2-nao)\n");
+
+
+                }
+
+            }
+
+        }
+
+        else
+        {
+            printf("nota invalida\n");
+        }
+
+
+
+    }
+
+
+}
