@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+
+int main()
+{
+    int a,b,sum=0;
+    while(1)
+    {
+        scanf("%d %d",&a,&b);
+
+        int i,n;
+        if( a > b)
+        {
+            i=b;
+            n=a;
+        }
+
+        if( b > a)
+        {
+            i=a;
+            n=b;
+        }
+
+        if(a<=0 || b<=0) break;
+
+
+        for(i; i<=n; i++)
+        {
+
+            printf("%d ",i);
+            sum = sum + i;
+
+        }
+        printf("Sum=%d\n",sum);
+        sum=0;
+    }
+
+}
