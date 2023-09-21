@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+int main()
+{
+    int x,a,b, sum=0;
+    scanf("%d",&x);
+
+    for(int i=1; i<=x; i++)
+    {
+
+        scanf("%d %d",&a,&b);
+
+        if( a > b )
+        {
+            int temp;
+            temp = a;
+            a = b;
+            b = temp;
+        }
+
+
+
+        for( int j = a+1; j < b; j++)
+        {
+            if( a==0 || b==0 || a==b) break;
+
+
+            else if( j%2!=0 )
+            {
+                sum= sum + j;
+            }
+        }
+        printf("%d\n",sum);
+        sum=0;
+    }
+
+}
