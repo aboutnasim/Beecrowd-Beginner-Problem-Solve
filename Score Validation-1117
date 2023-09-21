@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+int main()
+{
+    double a,m,count=0,sum=0;
+    while(1)
+    {
+
+        if( count == 2) break;
+        scanf("%lf",&a);
+
+
+
+        if( a>=0 && a<=10)
+        {
+            count++;
+            sum = sum + a;
+        }
+
+
+        else
+        {
+            printf("nota invalida\n");
+        }
+
+    }
+    m = sum / 2.00;
+    printf("media = %0.2lf\n",m);
+
+}
