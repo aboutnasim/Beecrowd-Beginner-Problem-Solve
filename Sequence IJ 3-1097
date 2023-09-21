@@ -1,0 +1,47 @@
+#include<stdio.h>
+
+int main()
+{
+    int j;
+
+    for(j=7; j>=5 ; j=j-1)
+    {
+
+        printf("I=1 J=%d\n",j);
+
+    }
+
+
+    for(j=9; j>=7 ; j=j-1)
+    {
+
+        printf("I=3 J=%d\n",j);
+
+    }
+
+
+
+    for(j=11; j>=9 ; j=j-1)
+    {
+
+        printf("I=5 J=%d\n",j);
+
+    }
+
+
+    for(j=13; j>=11 ; j=j-1)
+    {
+
+        printf("I=7 J=%d\n",j);
+
+    }
+
+
+    for(j=15; j>=13 ; j=j-1)
+    {
+
+        printf("I=9 J=%d\n",j);
+
+    }
+
+}
