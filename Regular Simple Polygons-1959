@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    long long n,l,ans=0;
+
+    scanf("%lld %lld",&n,&l);
+    while(n<3) scanf("%lld",&n);
+    while(l<1) scanf("%lld",&l);
+
+    ans = n * l;
+
+    printf("%lld\n",ans);
+}
