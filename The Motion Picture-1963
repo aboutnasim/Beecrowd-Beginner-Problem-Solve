@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    double x,y,res=0,ans=0;
+    char per= '%';
+    scanf("%lf %lf",&x,&y);
+
+    res = (y-x);
+
+    ans = (res*100)/x;
+
+    printf("%0.2lf%c\n",ans,per);
+
+
+}
