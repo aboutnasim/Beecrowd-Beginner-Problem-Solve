@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main()
+{
+    int T,a,b;
+
+    scanf("%d",&T);
+
+    for(int i=1; i<=T; i++)
+    {
+        scanf("%d %d",&a,&b);
+        while(a<0 && a>5 || b<0 && b>5) scanf("%d %d",&a,&b);
+
+        int sum=a+b;
+
+        if(sum==0)printf("PROXYCITY\n");
+        if(sum==1)printf("P.Y.N.G.\n");
+        if(sum==2)printf("DNSUEY!\n");
+        if(sum==3)printf("SERVERS\n");
+        if(sum==4)printf("HOST!\n");
+        if(sum==5)printf("CRIPTONIZE\n");
+        if(sum==6)printf("OFFLINE DAY\n");
+        if(sum==7)printf("SALT\n");
+        if(sum==8)printf("ANSWER!\n");
+        if(sum==9)printf("RAR?\n");
+        if(sum==10)printf("WIFI ANTENNAS\n");
+
+    }
+}
